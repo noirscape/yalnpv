@@ -33,14 +33,21 @@ Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
 OutFile "DF.exe"
 InstallDir "$EXEDIR\Dwarf Fortress"
 ShowInstDetails show
+RequestExecutionLevel user
+BrandingText "Ev1l0rd. Dwarf Fortress is made by Bay12Games."
 
 Section "Dwarf Fortress 0.42.04" SEC01
+        SectionIn RO
+        File /r "I:\Apps\PortableGit\dwarffortressnsis\df_42_04_win\*"
 SectionEnd
 
-Section "DFHack" SEC02
+Section /o "DFHack 0.42.04-alpha1" SEC02
+        SetOverwrite on
+        File /r "I:\Apps\PortableGit\dwarffortressnsis\dfhack\*"
+        SetOverwrite off
 SectionEnd
 
-Section "Dwarf Therapist" SEC03
+Section /o "Dwarf Therapist" SEC03
 SectionEnd
 
 Section -Post
@@ -48,7 +55,7 @@ SectionEnd
 
 ; Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} ""
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Powerful Lua Scripting Library"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Makes managing dwarves easier!"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "The base game."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Powerful Lua Scripting Library."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Makes managing dwarves easier."
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
