@@ -36,16 +36,16 @@ ShowInstDetails show
 RequestExecutionLevel user
 BrandingText "Ev1l0rd. Dwarf Fortress is made by Bay12Games."
 
-Section "Dwarf Fortress 0.42.04" SEC01
+Section "Dwarf Fortress 0.42.06" SEC01
         SectionIn RO
-        File /r "I:\Apps\PortableGit\dwarffortressnsis\df_42_04_win\*"
+        File /r "I:\Apps\PortableGit\dwarffortressnsis\df_42_06_win\*"
 SectionEnd
 
-Section /o "DFHack 0.42.04-alpha1" SEC02
-        SetOverwrite on
-        File /r "I:\Apps\PortableGit\dwarffortressnsis\dfhack\*"
-        SetOverwrite off
-SectionEnd
+;Section /o "DFHack 0.42.04-alpha1" SEC02
+;        SetOverwrite on
+;        File /r "I:\Apps\PortableGit\dwarffortressnsis\dfhack\*"
+;        SetOverwrite off
+;SectionEnd
 
 Section /o "Dwarf Therapist" SEC03
 SectionEnd
