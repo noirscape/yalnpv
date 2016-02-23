@@ -49,6 +49,8 @@ Section /o "DFHack (Non-Existent)" SEC02
 SectionEnd
 
 Section /o "Dwarf Therapist" SEC03
+	SetOutPath "$INSTDIR\Dwarf Therapist"
+	File /r "Dwarf-Therapist\*"
 SectionEnd
 
 Section -Post
