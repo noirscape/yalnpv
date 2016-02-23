@@ -15,6 +15,8 @@
 
 ; Welcome page
 !insertmacro MUI_PAGE_WELCOME
+; License page 
+!insertmacro MUI_PAGE_LICENSE "df.txt"
 ; Components page
 !insertmacro MUI_PAGE_COMPONENTS
 ; Directory page
