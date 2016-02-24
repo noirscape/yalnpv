@@ -9,6 +9,9 @@
 ; MUI 1.67 compatible ------
 !include "MUI.nsh"
 
+; Used plugins
+!include "TextReplace.nsh"
+
 ; MUI Settings
 !define MUI_ABORTWARNING
 !define MUI_ICON "df_icon.ico"
@@ -44,6 +47,7 @@ Section "Dwarf Fortress 0.42.06" SEC01
         File /r "df_42_06_win\*"
 SectionEnd
 
+SectionGroup "Tools & Utilities" G01
 Section /o "DFHack (Non-Existent)" SEC02
         SetOverwrite on
         ;File /r "dfhack\*"
@@ -54,6 +58,14 @@ Section /o "Dwarf Therapist" SEC03
 	SetOutPath "$INSTDIR\Dwarf Therapist"
 	File /r "Dwarf-Therapist\*"
 SectionEnd
+SectionGroupEnd
+
+SectionGroup "Settings" G03
+Section /o "No Music" SEC04
+		SetOutPath "$INSTDIR" 
+		${textreplace::ReplaceInFile} "$INSTDIR\data\init\init.txt" "$INSTDIR\data\init\init.txt" "[SOUND:YES]" "[SOUND:NO]" "/S=0" $0
+SectionEnd
+SectionGroupEnd
 
 Section -Post
 SectionEnd
@@ -63,4 +75,7 @@ SectionEnd
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "The base game."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Powerful Lua Scripting Library."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Makes managing dwarves easier."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "Turns sound off (can be changed later)"
+  !insertmacro MUI_DESCRIPTION_TEXT ${G01} "Install various utilities and tools that make managing a fortress easier."
+  !insertmacro MUI_DESCRIPTION_TEXT ${G03} "Edit various settings of the game."
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
