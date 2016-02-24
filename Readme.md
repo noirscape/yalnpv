@@ -10,9 +10,13 @@ Get the [unicode NSIS compiler](http://portableapps.com/apps/development/nsis_po
 
 For most end-users, the files specified under Releases are those that you need. Compiling is rarely needed unless you want to modify the contents of the installer.
 
+### NSIS Plugins used
+* Modern UI (included by default)
+* TextReplace (included by default)
+
 Adding your graphics pack
 =========================
-TBA
+Look at the wiki for detailed information.
 
 Licensing
 =========
