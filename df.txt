@@ -1,28 +1,6 @@
 Slaves to Armok: God of Blood
 Chapter II: Dwarf Fortress
 
-
-*** COPYRIGHT INFORMATION ****************************
-
-Copyright (c) 2002-2016.  All rights are retained by Tarn Adams, save the following:  you may redistribute the unmodified binary and accompanying files, provided you do so free of charge.  You may distribute modified text files from the data and raw folders (see the readme.txt in those folders for more information).  We'd appreciate it if you credit yourself or an alias somewhere for any modifications to prevent confusion with vanilla DF (it helps with bug reports).  If you'd like to distribute a modified version of the game or portion of the archive and are worried about copyright infringement, please contact Tarn Adams at toadyone@bay12games.com.
-
-This software is still in development, and this means that there are going to be problems, including serious problems that, however unlikely, might damage your system or the information stored on it.  Please be aware of this before playing.
-
-
-*** NOTES ********************************************
-
-For help with gameplay, press the help key (initially '?') after starting the game.  You might have to press ESC and use 2/8 to select keybindings on non-US keyboards in order to get the help key to work properly.
-
-As of February 2016, you can also get help at the fan-created dwarffortresswiki.org.  Please make use of and contribute to this valuable resource.
-
-Visit www.bay12games.com to report problems, discuss the game and read information on future development.  There are also other games there.
-All of the games there are free.  If you paid for this game, get the latest version for free at bay12games.com, and let me know who was charging you at tarn.adams@gmail.com.
-
-See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
-See file_changes.txt for new init/interface information.
-See command_line.txt for information on world generation from command lines.
-
-
 *** SUPPORT BAY 12 ***********************************
 
 Bay 12 Games is fan-supported.  We've put a lot of time and effort into these games, which are all freely distributed, but we can't survive on your feedback alone.  Donations are appreciated.  Visit www.bay12games.com/support.html to see how you can help.
@@ -167,27 +145,5 @@ ncurses:
  * authorization.                                                           *
  ****************************************************************************/
  
- /*
-Dwarf Therapist
-Copyright (c) 2009,2010 Trey Stout (chmod)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-http://www.opensource.org/licenses/mit-license.php
-*/

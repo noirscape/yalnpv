@@ -1,0 +1,17 @@
+SoundSense
+
+Disclaimer
+==========
+SoundSense has been tested and I can not imagine a situation where it could cause harm. 
+However, to be on the safe side: SoundSense is provided 'as is,' without warranty of any 
+kind, either express or implied. You assume total responsibility for the use of the 
+Software as it is entirely at your own risk.
+
+
+Acknowledgment
+==============
+The SoundSense program itself was written (and is maintained) by Petr Prokop. But a lot of 
+talented people produced, recorded and edited the music and sound that went into this 
+project. They deserve our acknowledgment and appreciation, too. If you enjoy SoundSense 
+and are curious to see who these people are or how many different sources we used, then 
+check out ATTRIBUTION.TXT in the Soundpack.zip package for a full credits list. 
