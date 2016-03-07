@@ -74,6 +74,12 @@ Section /o "Soundsense" SEC05
 	SetOutPath "$INSTDIR"
 SectionEnd
 
+Section /o "Quickfort" SEC14
+	SetOutPath "$INSTDIR\quickfort"
+	File /r "quickfort\*"
+	SetOutPath "$INSTDIR"
+SectionEnd
+
 SectionGroupEnd
 
 SectionGroup "Graphic Packs" G02
@@ -135,6 +141,7 @@ SectionEnd
  ; Disabled for now, as it gives issues.
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC12} "Default ASCII graphics."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC13} "Disable the commas and devaries the ground. Could be better on the eyes."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC14} "Better macros for Dwarf Fortress."
   !insertmacro MUI_DESCRIPTION_TEXT ${G01} "Install various utilities and tools that make managing a fortress easier."
   !insertmacro MUI_DESCRIPTION_TEXT ${G02} "Choose to install a graphics pack."
   !insertmacro MUI_DESCRIPTION_TEXT ${G03} "Edit various settings of the game."
