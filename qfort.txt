@@ -1,0 +1,37 @@
+Quickfort is written by joelpt <quickfort@joelpt.net>.
+
+Thanks to the following individuals whose code contributions are present
+in Quickfort:
+
+    bakergo (proper CSV file parsing; many good suggestions)
+    Valdemar (author of designator.ahk, which QF 1.00 was based on)
+
+Thanks to the following individuals whose bug-hunting or feature-requesting
+resulted in improvements to Quickfort:
+
+    Snuffy
+    Xinael
+    Jhoosier
+    LegoLord
+    shadow_slicer
+    starrrie
+    Aklyon
+    Root Infinity
+    Thundercraft
+    kurzedmetal
+    Robik
+    VenomIreland
+
+Copyright 2012 Joel Thornton
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
