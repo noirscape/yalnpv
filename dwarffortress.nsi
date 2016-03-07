@@ -33,6 +33,7 @@ Var nodots
 !insertmacro MUI_PAGE_LICENSE "dt.txt"
 !insertmacro MUI_PAGE_LICENSE "soundsense.txt"
 !insertmacro MUI_PAGE_LICENSE "LICENSE"
+!insertmacro MUI_PAGE_LICENSE "graphicspacks.txt"
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
