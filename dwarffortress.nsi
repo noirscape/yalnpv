@@ -32,6 +32,7 @@ Var nodots
 !insertmacro MUI_PAGE_LICENSE "df.txt"
 !insertmacro MUI_PAGE_LICENSE "dt.txt"
 !insertmacro MUI_PAGE_LICENSE "soundsense.txt"
+!insertmacro MUI_PAGE_LICENSE "dfhack.txt"
 !insertmacro MUI_PAGE_LICENSE "LICENSE"
 !insertmacro MUI_PAGE_LICENSE "graphicspacks.txt"
 !insertmacro MUI_PAGE_COMPONENTS
@@ -57,9 +58,11 @@ Section "Dwarf Fortress 0.42.06" SEC01
 SectionEnd
 
 SectionGroup "Tools & Utilities" G01
-Section /o "DFHack (Non-Existent)" SEC02
+Section /o "DFHack" SEC02
+	SetOutPath "$INSTDIR"
         SetOverwrite on
-        ;File /r "dfhack\*"
+        File /r "dfhack\*"
+	Rename "$INSTDIR\dfhack.init-example" "$INSTDIR\dfhack.init"
         SetOverwrite off
 SectionEnd
 
@@ -124,7 +127,7 @@ SectionEnd
 ; Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "The base game."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Powerful Lua Scripting Library."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Powerful Lua Scripting Library. Also included is the stonesense visualizer."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Makes managing dwarves easier."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "Turns sound off."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC05} "Plays sounds and adds additional music (No music setting recommended)."
