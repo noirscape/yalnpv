@@ -58,7 +58,7 @@ Section "Dwarf Fortress 0.42.06" SEC01
 SectionEnd
 
 SectionGroup "Tools & Utilities" G01
-Section /o "DFHack" SEC02
+Section "DFHack" SEC02
 	SetOutPath "$INSTDIR"
         SetOverwrite on
         File /r "dfhack\*"
@@ -127,6 +127,17 @@ SectionEnd
 
 SectionGroupEnd
 
+SectionGroup "Additional configurations" G04
+
+Section "DFHack fixes" SEC15
+	SetOutPath "$INSTDIR"
+        SetOverwrite on
+        File /r "dfhack-fixes\*"
+        SetOverwrite off
+SectionEnd
+
+SectionGroupEnd
+
 Section -Post
 SectionEnd
 
@@ -146,7 +157,9 @@ SectionEnd
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC12} "Default ASCII graphics."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC13} "Disable the commas and devaries the ground. Could be better on the eyes."
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC14} "Better macros for Dwarf Fortress."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC15} "Various fixes for DFHack alpha's (if there aren't any, this will do nothing)"
   !insertmacro MUI_DESCRIPTION_TEXT ${G01} "Install various utilities and tools that make managing a fortress easier."
   !insertmacro MUI_DESCRIPTION_TEXT ${G02} "Choose to install a graphics pack."
   !insertmacro MUI_DESCRIPTION_TEXT ${G03} "Edit various settings of the game."
+  !insertmacro MUI_DESCRIPTION_TEXT ${G04} "Additional scripts/configs that may be useful for certain tools/utilities."
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
