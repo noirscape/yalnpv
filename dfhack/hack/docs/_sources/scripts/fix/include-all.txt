@@ -1,0 +1,40 @@
+.. include:: C:/Games/DF/dfhack/scripts\fix\blood-del.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\build-location.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\dead-units.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\fat-dwarves.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\feeding-timers.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\item-occupancy.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\loyaltycascade.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\population-cap.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\stable-temp.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix\stuckdoors.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+

@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Scripts for Modders &mdash; DFHack 0.42.06- documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/dfhack.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.42.06-',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/dfhack-icon.ico"/>
+    <link rel="top" title="DFHack 0.42.06- documentation" href="../../index.html" />
+    <link rel="up" title="DFHack Scripts" href="../Scripts.html" />
+    <link rel="next" title="List of Authors" href="../Authors.html" />
+    <link rel="prev" title="GUI Scripts" href="gui.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scripts-for-modders">
+<span id="modtools"></span><h1><a class="toc-backref" href="#id22">Scripts for Modders</a><a class="headerlink" href="#scripts-for-modders" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">modtools/*</span></code> scripts provide tools for modders, often with changes
+to the raw files, and are not intended to be called manually by end-users.</p>
+<p>These scripts are mostly useful for raw modders and scripters. They all have
+standard arguments: arguments are of the form <code class="docutils literal"><span class="pre">tool</span> <span class="pre">-argName1</span> <span class="pre">argVal1</span>
+<span class="pre">-argName2</span> <span class="pre">argVal2</span></code>. This is equivalent to <code class="docutils literal"><span class="pre">tool</span> <span class="pre">-argName2</span> <span class="pre">argVal2</span> <span class="pre">-argName1</span>
+<span class="pre">argVal1</span></code>. It is not necessary to provide a value to an argument name: <code class="docutils literal"><span class="pre">tool</span>
+<span class="pre">-argName3</span></code> is fine. Supplying the same argument name multiple times will
+result in an error. Argument names are preceded with a dash. The <code class="docutils literal"><span class="pre">-help</span></code>
+argument will print a descriptive usage string describing the nature of the
+arguments. For multiple word argument values, brackets must be used: <code class="docutils literal"><span class="pre">tool</span>
+<span class="pre">-argName4</span> <span class="pre">[</span> <span class="pre">sadf1</span> <span class="pre">sadf2</span> <span class="pre">sadf3</span> <span class="pre">]</span></code>. In order to allow passing literal braces as
+part of the argument, backslashes are used: <code class="docutils literal"><span class="pre">tool</span> <span class="pre">-argName4</span> <span class="pre">[</span> <span class="pre">\]</span> <span class="pre">asdf</span> <span class="pre">\foo</span> <span class="pre">]</span></code>
+sets <code class="docutils literal"><span class="pre">argName4</span></code> to <code class="docutils literal"><span class="pre">\]</span> <span class="pre">asdf</span> <span class="pre">foo</span></code>. The <code class="docutils literal"><span class="pre">*-trigger</span></code> scripts have a similar
+policy with backslashes.</p>
+<p>Any of these scripts can be called with <code class="docutils literal"><span class="pre">-help</span></code> for more information.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#scripts-for-modders" id="id22">Scripts for Modders</a><ul>
+<li><a class="reference internal" href="#modtools-add-syndrome" id="id23">modtools/add-syndrome</a></li>
+<li><a class="reference internal" href="#modtools-anonymous-script" id="id24">modtools/anonymous-script</a></li>
+<li><a class="reference internal" href="#modtools-create-item" id="id25">modtools/create-item</a></li>
+<li><a class="reference internal" href="#modtools-create-unit" id="id26">modtools/create-unit</a></li>
+<li><a class="reference internal" href="#modtools-equip-item" id="id27">modtools/equip-item</a></li>
+<li><a class="reference internal" href="#modtools-force" id="id28">modtools/force</a></li>
+<li><a class="reference internal" href="#modtools-interaction-trigger" id="id29">modtools/interaction-trigger</a></li>
+<li><a class="reference internal" href="#modtools-invader-item-destroyer" id="id30">modtools/invader-item-destroyer</a></li>
+<li><a class="reference internal" href="#modtools-item-trigger" id="id31">modtools/item-trigger</a></li>
+<li><a class="reference internal" href="#modtools-moddable-gods" id="id32">modtools/moddable-gods</a></li>
+<li><a class="reference internal" href="#modtools-outside-only" id="id33">modtools/outside-only</a></li>
+<li><a class="reference internal" href="#modtools-projectile-trigger" id="id34">modtools/projectile-trigger</a></li>
+<li><a class="reference internal" href="#modtools-random-trigger" id="id35">modtools/random-trigger</a></li>
+<li><a class="reference internal" href="#modtools-raw-lint" id="id36">modtools/raw-lint</a></li>
+<li><a class="reference internal" href="#modtools-reaction-product-trigger" id="id37">modtools/reaction-product-trigger</a></li>
+<li><a class="reference internal" href="#modtools-reaction-trigger" id="id38">modtools/reaction-trigger</a></li>
+<li><a class="reference internal" href="#modtools-reaction-trigger-transition" id="id39">modtools/reaction-trigger-transition</a></li>
+<li><a class="reference internal" href="#modtools-skill-change" id="id40">modtools/skill-change</a></li>
+<li><a class="reference internal" href="#modtools-spawn-flow" id="id41">modtools/spawn-flow</a></li>
+<li><a class="reference internal" href="#modtools-syndrome-trigger" id="id42">modtools/syndrome-trigger</a></li>
+<li><a class="reference internal" href="#modtools-transform-unit" id="id43">modtools/transform-unit</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="modtools-add-syndrome">
+<span id="id1"></span><h2><a class="toc-backref" href="#id23">modtools/add-syndrome</a><a class="headerlink" href="#modtools-add-syndrome" title="Permalink to this headline">¶</a></h2>
+<p>This allows adding and removing syndromes from units.</p>
+</div>
+<div class="section" id="modtools-anonymous-script">
+<span id="id2"></span><h2><a class="toc-backref" href="#id24">modtools/anonymous-script</a><a class="headerlink" href="#modtools-anonymous-script" title="Permalink to this headline">¶</a></h2>
+<p>This allows running a short simple Lua script passed as an argument instead of
+running a script from a file. This is useful when you want to do something too
+complicated to make with the existing modtools, but too simple to be worth its
+own script file.  Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>anonymous-script &quot;print(args[1])&quot; arg1 arg2
+# prints &quot;arg1&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="modtools-create-item">
+<span id="id3"></span><h2><a class="toc-backref" href="#id25">modtools/create-item</a><a class="headerlink" href="#modtools-create-item" title="Permalink to this headline">¶</a></h2>
+<p>Replaces the <a class="reference internal" href="../Plugins.html#createitem"><span>createitem</span></a> plugin, with standard
+arguments. The other versions will be phased out in a later version.</p>
+</div>
+<div class="section" id="modtools-create-unit">
+<span id="id4"></span><h2><a class="toc-backref" href="#id26">modtools/create-unit</a><a class="headerlink" href="#modtools-create-unit" title="Permalink to this headline">¶</a></h2>
+<p>Creates a unit.  Use <code class="docutils literal"><span class="pre">modtools/create-unit</span> <span class="pre">-help</span></code> for more info.</p>
+</div>
+<div class="section" id="modtools-equip-item">
+<span id="id5"></span><h2><a class="toc-backref" href="#id27">modtools/equip-item</a><a class="headerlink" href="#modtools-equip-item" title="Permalink to this headline">¶</a></h2>
+<p>Force a unit to equip an item with a particular body part; useful in
+conjunction with the <code class="docutils literal"><span class="pre">create</span></code> scripts above.  See also <a class="reference internal" href="../Plugins.html#forceequip"><span>forceequip</span></a>.</p>
+</div>
+<div class="section" id="modtools-force">
+<span id="id6"></span><h2><a class="toc-backref" href="#id28">modtools/force</a><a class="headerlink" href="#modtools-force" title="Permalink to this headline">¶</a></h2>
+<p>This tool triggers events like megabeasts, caravans, and migrants.</p>
+</div>
+<div class="section" id="modtools-interaction-trigger">
+<span id="id7"></span><h2><a class="toc-backref" href="#id29">modtools/interaction-trigger</a><a class="headerlink" href="#modtools-interaction-trigger" title="Permalink to this headline">¶</a></h2>
+<p>This triggers events when a unit uses an interaction on another. It works by
+scanning the announcements for the correct attack verb, so the attack verb
+must be specified in the interaction. It includes an option to suppress this
+announcement after it finds it.</p>
+</div>
+<div class="section" id="modtools-invader-item-destroyer">
+<span id="id8"></span><h2><a class="toc-backref" href="#id30">modtools/invader-item-destroyer</a><a class="headerlink" href="#modtools-invader-item-destroyer" title="Permalink to this headline">¶</a></h2>
+<p>This tool configurably destroys invader items to prevent clutter or to prevent
+the player from getting tools exclusive to certain races.</p>
+</div>
+<div class="section" id="modtools-item-trigger">
+<span id="id9"></span><h2><a class="toc-backref" href="#id31">modtools/item-trigger</a><a class="headerlink" href="#modtools-item-trigger" title="Permalink to this headline">¶</a></h2>
+<p>This powerful tool triggers DFHack commands when a unit equips, unequips, or
+attacks another unit with specified item types, specified item materials, or
+specified item contaminants.</p>
+</div>
+<div class="section" id="modtools-moddable-gods">
+<span id="id10"></span><h2><a class="toc-backref" href="#id32">modtools/moddable-gods</a><a class="headerlink" href="#modtools-moddable-gods" title="Permalink to this headline">¶</a></h2>
+<p>This is a standardized version of Putnam&#8217;s moddableGods script. It allows you
+to create gods on the command-line.</p>
+</div>
+<div class="section" id="modtools-outside-only">
+<span id="id11"></span><h2><a class="toc-backref" href="#id33">modtools/outside-only</a><a class="headerlink" href="#modtools-outside-only" title="Permalink to this headline">¶</a></h2>
+<p>This allows you to specify certain custom buildings as outside only, or inside
+only. If the player attempts to build a building in an inappropriate location,
+the building will be destroyed.</p>
+</div>
+<div class="section" id="modtools-projectile-trigger">
+<span id="id12"></span><h2><a class="toc-backref" href="#id34">modtools/projectile-trigger</a><a class="headerlink" href="#modtools-projectile-trigger" title="Permalink to this headline">¶</a></h2>
+<p>This triggers dfhack commands when projectiles hit their targets.</p>
+</div>
+<div class="section" id="modtools-random-trigger">
+<span id="id13"></span><h2><a class="toc-backref" href="#id35">modtools/random-trigger</a><a class="headerlink" href="#modtools-random-trigger" title="Permalink to this headline">¶</a></h2>
+<p>This triggers random dfhack commands with specified probabilities.
+Register a few scripts, then tell it to &#8220;go&#8221; and it will pick one
+based on the probability weights you specified.  Outcomes are mutually
+exclusive. To make independent random events, call the script multiple
+times.</p>
+</div>
+<div class="section" id="modtools-raw-lint">
+<span id="id14"></span><h2><a class="toc-backref" href="#id36">modtools/raw-lint</a><a class="headerlink" href="#modtools-raw-lint" title="Permalink to this headline">¶</a></h2>
+<p>Checks for simple issues with raw files. Can be run automatically.</p>
+</div>
+<div class="section" id="modtools-reaction-product-trigger">
+<span id="id15"></span><h2><a class="toc-backref" href="#id37">modtools/reaction-product-trigger</a><a class="headerlink" href="#modtools-reaction-product-trigger" title="Permalink to this headline">¶</a></h2>
+<p>This triggers dfhack commands when reaction products are produced, once per
+product.</p>
+</div>
+<div class="section" id="modtools-reaction-trigger">
+<span id="id16"></span><h2><a class="toc-backref" href="#id38">modtools/reaction-trigger</a><a class="headerlink" href="#modtools-reaction-trigger" title="Permalink to this headline">¶</a></h2>
+<p>Triggers dfhack commands when custom reactions complete, regardless of whether
+it produced anything, once per completion.  Use the <code class="docutils literal"><span class="pre">-help</span></code> command
+for more information.</p>
+</div>
+<div class="section" id="modtools-reaction-trigger-transition">
+<span id="id17"></span><h2><a class="toc-backref" href="#id39">modtools/reaction-trigger-transition</a><a class="headerlink" href="#modtools-reaction-trigger-transition" title="Permalink to this headline">¶</a></h2>
+<p>Scans raw files and creates a file to help modders transition from
+autoSyndrome to reaction-trigger.</p>
+<p>Prints useful things to the console and a file to help modders
+transition from autoSyndrome to reaction-trigger.  This script
+is basically an apology for breaking backward compatibiility,
+and will be removed eventually.</p>
+</div>
+<div class="section" id="modtools-skill-change">
+<span id="id18"></span><h2><a class="toc-backref" href="#id40">modtools/skill-change</a><a class="headerlink" href="#modtools-skill-change" title="Permalink to this headline">¶</a></h2>
+<p>Sets or modifies a skill of a unit.  Args:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">-help:</th><td class="field-body">print the help message</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">-skill skillName:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">set the skill that we&#8217;re talking about</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">-mode (add/set):</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">are we adding experience/levels or setting them?</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">-granularity (experience/level):</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">direct experience, or experience levels?</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">-unit id:</th><td class="field-body">id of the target unit</td>
+</tr>
+<tr class="field-even field"><th class="field-name">-value amount:</th><td class="field-body">how much to set/add</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="modtools-spawn-flow">
+<span id="id19"></span><h2><a class="toc-backref" href="#id41">modtools/spawn-flow</a><a class="headerlink" href="#modtools-spawn-flow" title="Permalink to this headline">¶</a></h2>
+<p>Creates flows at the specified location.</p>
+</div>
+<div class="section" id="modtools-syndrome-trigger">
+<span id="id20"></span><h2><a class="toc-backref" href="#id42">modtools/syndrome-trigger</a><a class="headerlink" href="#modtools-syndrome-trigger" title="Permalink to this headline">¶</a></h2>
+<p>Triggers dfhack commands when syndromes are applied to units.</p>
+</div>
+<div class="section" id="modtools-transform-unit">
+<span id="id21"></span><h2><a class="toc-backref" href="#id43">modtools/transform-unit</a><a class="headerlink" href="#modtools-transform-unit" title="Permalink to this headline">¶</a></h2>
+<p>Transforms a unit into another unit type, possibly permanently.
+Warning: this will crash arena mode if you view the unit on the
+same tick that it transforms.  If you wait until later, it will be fine.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">DFHack</a></h1>
+
+
+
+
+
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../Scripts.html">DFHack Scripts</a><ul>
+      <li>Previous: <a href="gui.html" title="previous chapter">GUI Scripts</a></li>
+      <li>Next: <a href="../Authors.html" title="next chapter">List of Authors</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Scripts for Modders</a><ul>
+<li><a class="reference internal" href="#modtools-add-syndrome">modtools/add-syndrome</a></li>
+<li><a class="reference internal" href="#modtools-anonymous-script">modtools/anonymous-script</a></li>
+<li><a class="reference internal" href="#modtools-create-item">modtools/create-item</a></li>
+<li><a class="reference internal" href="#modtools-create-unit">modtools/create-unit</a></li>
+<li><a class="reference internal" href="#modtools-equip-item">modtools/equip-item</a></li>
+<li><a class="reference internal" href="#modtools-force">modtools/force</a></li>
+<li><a class="reference internal" href="#modtools-interaction-trigger">modtools/interaction-trigger</a></li>
+<li><a class="reference internal" href="#modtools-invader-item-destroyer">modtools/invader-item-destroyer</a></li>
+<li><a class="reference internal" href="#modtools-item-trigger">modtools/item-trigger</a></li>
+<li><a class="reference internal" href="#modtools-moddable-gods">modtools/moddable-gods</a></li>
+<li><a class="reference internal" href="#modtools-outside-only">modtools/outside-only</a></li>
+<li><a class="reference internal" href="#modtools-projectile-trigger">modtools/projectile-trigger</a></li>
+<li><a class="reference internal" href="#modtools-random-trigger">modtools/random-trigger</a></li>
+<li><a class="reference internal" href="#modtools-raw-lint">modtools/raw-lint</a></li>
+<li><a class="reference internal" href="#modtools-reaction-product-trigger">modtools/reaction-product-trigger</a></li>
+<li><a class="reference internal" href="#modtools-reaction-trigger">modtools/reaction-trigger</a></li>
+<li><a class="reference internal" href="#modtools-reaction-trigger-transition">modtools/reaction-trigger-transition</a></li>
+<li><a class="reference internal" href="#modtools-skill-change">modtools/skill-change</a></li>
+<li><a class="reference internal" href="#modtools-spawn-flow">modtools/spawn-flow</a></li>
+<li><a class="reference internal" href="#modtools-syndrome-trigger">modtools/syndrome-trigger</a></li>
+<li><a class="reference internal" href="#modtools-transform-unit">modtools/transform-unit</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, The DFHack Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../../_sources/docs/_auto/modtools.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

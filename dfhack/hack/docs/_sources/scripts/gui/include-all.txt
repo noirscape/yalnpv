@@ -1,0 +1,104 @@
+.. include:: C:/Games/DF/dfhack/scripts\gui\advfort.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\advfort_items.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\assign-rack.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\autobutcher.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\choose-weapons.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\clone-uniform.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\companion-order.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\create-item.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\dfstatus.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\gm-editor.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\gm-unit.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\guide-path.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\hack-wish.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\hello-world.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\liquids.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\mechanisms.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\mod-manager.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\no-dfhack-init.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\power-meter.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\rename.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\room-list.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\siege-engine.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\stockpiles.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\unit-info-viewer.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\workflow.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gui\workshop-job.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+

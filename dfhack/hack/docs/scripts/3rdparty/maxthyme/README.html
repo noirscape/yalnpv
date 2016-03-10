@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>maxthyme’s scripts &mdash; DFHack 0.40.24-r3 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '0.40.24-r3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../_static/dfhack-icon.ico"/>
+    <link rel="top" title="DFHack 0.40.24-r3 documentation" href="../../../README.html" />
+    <link rel="up" title="3rd-party scripts" href="../README.html" />
+    <link rel="next" title="Roses’ scripts" href="../roses/README.html" />
+    <link rel="prev" title="MaienM’s scripts" href="../maienm/README.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="maxthyme-s-scripts">
+<h1>maxthyme&#8217;s scripts<a class="headerlink" href="#maxthyme-s-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="launch">
+<h2>launch<a class="headerlink" href="#launch" title="Permalink to this headline">¶</a></h2>
+<p>Activate with a cursor on screen and you will go there rapidly, attack
+something first to send them there.  Based on <code class="docutils literal"><span class="pre">propel.lua</span></code> by Roses.</p>
+</div>
+<div class="section" id="names">
+<h2>names<a class="headerlink" href="#names" title="Permalink to this headline">¶</a></h2>
+<p>Rename units or items.  Usage:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">-help:</th><td class="field-body">print this help message</td>
+</tr>
+<tr class="field-even field"><th class="field-name">-item:</th><td class="field-body">if viewing an item</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">-unit:</th><td class="field-body">if viewing a unit</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">-first [Somename | &#8220;Some Names like This&#8221;:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">if a first name is desired, leave blank to clear current first name</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="prefchange">
+<h2>prefchange<a class="headerlink" href="#prefchange" title="Permalink to this headline">¶</a></h2>
+<p>Sets preferences for mooding to include a weapon type, equipment type,
+and material.  If you also wish to trigger a mood, see
+<a class="reference internal" href="../../../docs/Plugins.html#plugins-strangemood"><span>strangemood</span></a>.</p>
+<p>Valid options:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">show:</th><td class="field-body">show preferences of all units</td>
+</tr>
+<tr class="field-even field"><th class="field-name">c:</th><td class="field-body">clear preferences of selected unit</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">all:</th><td class="field-body">clear preferences of all units</td>
+</tr>
+<tr class="field-even field"><th class="field-name">axp:</th><td class="field-body">likes axes, breastplates, and steel</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">has:</th><td class="field-body">likes hammers, mail shirts, and steel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">swb:</th><td class="field-body">likes short swords, high boots, and steel</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">spb:</th><td class="field-body">likes spears, high boots, and steel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">mas:</th><td class="field-body">likes maces, shields, and steel</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">xbh:</th><td class="field-body">likes crossbows, helms, and steel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">pig:</th><td class="field-body">likes picks, gauntlets, and steel</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">log:</th><td class="field-body">likes long swords, gauntlets, and steel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">dap:</th><td class="field-body">likes daggers, greaves, and steel</td>
+</tr>
+</tbody>
+</table>
+<p>Feel free to adjust the values as you see fit, change the has steel to
+platinum, change the axp axes to great axes, whatnot.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../README.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">maxthyme&#8217;s scripts</a><ul>
+<li><a class="reference internal" href="#launch">launch</a></li>
+<li><a class="reference internal" href="#names">names</a></li>
+<li><a class="reference internal" href="#prefchange">prefchange</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../README.html">Documentation overview</a><ul>
+  <li><a href="../../README.html">DFHack Scripts</a><ul>
+  <li><a href="../README.html">3rd-party scripts</a><ul>
+      <li>Previous: <a href="../maienm/README.html" title="previous chapter">MaienM&#8217;s scripts</a></li>
+      <li>Next: <a href="../roses/README.html" title="next chapter">Roses&#8217; scripts</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/scripts/3rdparty/maxthyme/README.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, The DFHack Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../../../_sources/scripts/3rdparty/maxthyme/README.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

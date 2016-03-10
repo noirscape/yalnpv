@@ -1,0 +1,240 @@
+.. include:: C:/Games/DF/dfhack/scripts\adaptation.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\add-thought.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\armoks-blessing.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\autofarm.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\autolabor-artisans.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\autounsuspend.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\ban-cooking.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\binpatch.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\brainwash.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\burial.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\create-items.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\deathcause.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\dfusion.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\digfort.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\drain-aquifer.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\elevate-mental.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\elevate-physical.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\exportlegends.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\exterminate.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fix-ster.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\fixnaked.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\forum-dwarves.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\full-heal.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\gaydar.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\growcrops.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\hfs-pit.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\hotkey-notes.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\item-descriptions.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\lever.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\locate-ore.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\log-region.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\lua.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\make-legendary.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\make-monarch.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\markdown.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\masspit.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\multicmd.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\points.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\position.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\pref-adjust.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\putontable.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\quicksave.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\region-pops.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\rejuvenate.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\remove-stress.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\remove-wear.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\repeat.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\setfps.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\show-unit-syndromes.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\siren.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\soundsense-season.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\source.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\startdwarf.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\stripcaged.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\superdwarf.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\teleport.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\undump-buildings.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\unsuspend.rb
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\view-item-info.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\warn-starving.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+

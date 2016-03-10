@@ -14122,6 +14122,36 @@ class BuildingGrateWallst < BuildingActual
     }
 end
 
+class BuildingHandler < MemHack::Compound
+    sizeof 1476
+
+    rtti_classname :building_handlerst
+
+    field(:all, 4) {
+        stl_vector(4) {
+            pointer {
+                global :Building
+            }
+        }
+    }
+    field(:other, 20) {
+        static_array(90, 16, BuildingsOtherId) {
+            stl_vector(4) {
+                pointer {
+                    global :Building
+                }
+            }
+        }
+    }
+    field(:bad, 1460) {
+        stl_vector(4) {
+            pointer {
+                global :Building
+            }
+        }
+    }
+end
+
 class BuildingHatchst < BuildingActual
     sizeof 280
 
@@ -35084,6 +35114,27 @@ class MachineConnModes < MemHack::Compound
     field(:z_down, 0) { bit 5 }
 end
 
+class MachineHandler < MemHack::Compound
+    sizeof 36
+
+    rtti_classname :machine_handlerst
+
+    field(:all, 4) {
+        stl_vector(4) {
+            pointer {
+                global :Machine
+            }
+        }
+    }
+    field(:bad, 20) {
+        stl_vector(4) {
+            pointer {
+                global :Machine
+            }
+        }
+    }
+end
+
 class MachineInfo < MemHack::Compound
     sizeof 8
 
@@ -44133,9 +44184,8 @@ end
 class UiBuildSelector < MemHack::Compound
     sizeof 4016
 
-    field(:unk_0, 0) {
-        number 32, true
-    }
+    rtti_classname :buildreqst
+
     field(:requirements, 4) {
         stl_vector(4) {
             pointer {
@@ -53022,35 +53072,8 @@ class World < MemHack::Compound
             global :ProjListLink
         }
     }
-    field(:unk_42_06_1, 106884) {
-        number 32, true
-    }
-    field(:buildings, 106888) {
-        compound(:World_TBuildings) {
-            field(:all, 0) {
-                stl_vector(4) {
-                    pointer {
-                        global :Building
-                    }
-                }
-            }
-            field(:other, 16) {
-                static_array(90, 16, BuildingsOtherId) {
-                    stl_vector(4) {
-                        pointer {
-                            global :Building
-                        }
-                    }
-                }
-            }
-            field(:bad, 1456) {
-                stl_vector(4) {
-                    pointer {
-                        global :Building
-                    }
-                }
-            }
-        }
+    field(:buildings, 106884) {
+        global :BuildingHandler
     }
     field(:check_bridge_collapse, 108360) {
         number 8, true, nil, BooleanEnum
@@ -53058,26 +53081,8 @@ class World < MemHack::Compound
     field(:check_machine_collapse, 108361) {
         number 8, true, nil, BooleanEnum
     }
-    field(:unk_42_06_2, 108364) {
-        number 32, true
-    }
-    field(:machines, 108368) {
-        compound(:World_TMachines) {
-            field(:all, 0) {
-                stl_vector(4) {
-                    pointer {
-                        global :Machine
-                    }
-                }
-            }
-            field(:bad, 16) {
-                stl_vector(4) {
-                    pointer {
-                        global :Machine
-                    }
-                }
-            }
-        }
+    field(:machines, 108364) {
+        global :MachineHandler
     }
     field(:flow_guides, 108400) {
         compound(:World_TFlowGuides) {

@@ -1,0 +1,80 @@
+.. include:: C:/Games/DF/dfhack/scripts\modtools\add-syndrome.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\anonymous-script.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\create-item.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\create-unit.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\equip-item.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\force.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\interaction-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\invader-item-destroyer.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\item-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\moddable-gods.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\outside-only.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\projectile-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\random-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\reaction-product-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\reaction-trigger-transition.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\reaction-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\skill-change.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\spawn-flow.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\syndrome-trigger.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
+.. include:: C:/Games/DF/dfhack/scripts\modtools\transform-unit.lua
+   :start-after: BEGIN_DOCS
+   :end-before: END_DOCS
+
