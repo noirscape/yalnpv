@@ -1,0 +1,197 @@
+.. _devel:
+
+###################
+Development Scripts
+###################
+
+.. include:: /scripts/devel/about.txt
+
+.. contents::
+
+.. _devel/all-bob:
+
+.. include:: /scripts/devel/all-bob.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/annc-monitor:
+
+.. include:: /scripts/3rdparty/lethosor/devel/annc-monitor.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/check-release:
+
+.. include:: /scripts/devel/check-release.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/clear-script-env:
+
+.. include:: /scripts/devel/clear-script-env.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/click-monitor:
+
+.. include:: /scripts/3rdparty/lethosor/devel/click-monitor.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/cmptiles:
+
+.. include:: /scripts/devel/cmptiles.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/export-dt-ini:
+
+.. include:: /scripts/devel/export-dt-ini.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/find-offsets:
+
+.. include:: /scripts/devel/find-offsets.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/inject-raws:
+
+.. include:: /scripts/devel/inject-raws.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/inspect-screen:
+
+.. include:: /scripts/devel/inspect-screen.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/light:
+
+.. include:: /scripts/devel/light.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/list-filters:
+
+.. include:: /scripts/devel/list-filters.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/lsmem:
+
+.. include:: /scripts/devel/lsmem.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/lua-example:
+
+.. include:: /scripts/devel/lua-example.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/modstate-monitor:
+
+.. include:: /scripts/3rdparty/lethosor/devel/modstate-monitor.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/nuke-items:
+
+.. include:: /scripts/devel/nuke-items.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/pop-screen:
+
+.. include:: /scripts/devel/pop-screen.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/prepare-save:
+
+.. include:: /scripts/devel/prepare-save.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/print-args:
+
+.. include:: /scripts/devel/print-args.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/print-args2:
+
+.. include:: /scripts/devel/print-args2.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/save-version:
+
+.. include:: /scripts/devel/save-version.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/scanitemother:
+
+.. include:: /scripts/devel/scanitemother.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/spawn-unit-helper:
+
+.. include:: /scripts/devel/spawn-unit-helper.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/test-perlin:
+
+.. include:: /scripts/devel/test-perlin.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/unforbidall:
+
+.. include:: /scripts/devel/unforbidall.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/unit-path:
+
+.. include:: /scripts/devel/unit-path.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _devel/watch-minecarts:
+
+.. include:: /scripts/devel/watch-minecarts.lua
+   :start-after: =begin
+   :end-before: =end

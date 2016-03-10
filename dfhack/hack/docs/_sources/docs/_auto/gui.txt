@@ -1,0 +1,239 @@
+.. _gui:
+
+###########
+GUI Scripts
+###########
+
+.. include:: /scripts/gui/about.txt
+
+.. contents::
+
+.. _gui/advfort:
+
+.. include:: /scripts/gui/advfort.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/advfort_items:
+
+.. include:: /scripts/gui/advfort_items.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/assign-rack:
+
+.. include:: /scripts/gui/assign-rack.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/autobutcher:
+
+.. include:: /scripts/gui/autobutcher.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/choose-weapons:
+
+.. include:: /scripts/gui/choose-weapons.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/clone-uniform:
+
+.. include:: /scripts/gui/clone-uniform.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/companion-order:
+
+.. include:: /scripts/gui/companion-order.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/confirm-opts:
+
+.. include:: /scripts/gui/confirm-opts.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/create-item:
+
+.. include:: /scripts/gui/create-item.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/dfstatus:
+
+.. include:: /scripts/gui/dfstatus.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/extended-status:
+
+.. include:: /scripts/3rdparty/lethosor/gui/extended-status.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/family-affairs:
+
+.. include:: /scripts/gui/family-affairs.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/gm-editor:
+
+.. include:: /scripts/gui/gm-editor.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/gm-unit:
+
+.. include:: /scripts/gui/gm-unit.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/guide-path:
+
+.. include:: /scripts/gui/guide-path.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/hack-wish:
+
+.. include:: /scripts/gui/hack-wish.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/hello-world:
+
+.. include:: /scripts/gui/hello-world.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/liquids:
+
+.. include:: /scripts/gui/liquids.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/load-screen:
+
+.. include:: /scripts/3rdparty/lethosor/gui/load-screen.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/mechanisms:
+
+.. include:: /scripts/gui/mechanisms.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/mod-manager:
+
+.. include:: /scripts/gui/mod-manager.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/no-dfhack-init:
+
+.. include:: /scripts/gui/no-dfhack-init.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/power-meter:
+
+.. include:: /scripts/gui/power-meter.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/prerelease-warning:
+
+.. include:: /scripts/gui/prerelease-warning.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/quickcmd:
+
+.. include:: /scripts/3rdparty/maienm/gui/quickcmd.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/rename:
+
+.. include:: /scripts/gui/rename.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/room-list:
+
+.. include:: /scripts/gui/room-list.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/settings-manager:
+
+.. include:: /scripts/3rdparty/lethosor/gui/settings-manager.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/siege-engine:
+
+.. include:: /scripts/gui/siege-engine.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/stockpiles:
+
+.. include:: /scripts/gui/stockpiles.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/unit-info-viewer:
+
+.. include:: /scripts/gui/unit-info-viewer.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/workflow:
+
+.. include:: /scripts/gui/workflow.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gui/workshop-job:
+
+.. include:: /scripts/gui/workshop-job.lua
+   :start-after: =begin
+   :end-before: =end

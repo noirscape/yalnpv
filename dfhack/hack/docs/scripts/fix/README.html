@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>fix/* - scripts that fix bugs or common problems &mdash; DFHack 0.40.24-r3 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.40.24-r3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/dfhack-icon.ico"/>
+    <link rel="top" title="DFHack 0.40.24-r3 documentation" href="../../README.html" />
+    <link rel="up" title="DFHack Scripts" href="../README.html" />
+    <link rel="next" title="fix/blood-del" href="include-all.html" />
+    <link rel="prev" title="devel/*" href="../devel/README.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="fix-scripts-that-fix-bugs-or-common-problems">
+<span id="scripts-fix"></span><h1>fix/* - scripts that fix bugs or common problems<a class="headerlink" href="#fix-scripts-that-fix-bugs-or-common-problems" title="Permalink to this headline">¶</a></h1>
+<p>Scripts in this subdirectory fix various bugs and issues, some of them obscure.</p>
+<div class="section" id="fix-blood-del">
+<span id="scripts-fix-blood-del"></span><h2>fix/blood-del<a class="headerlink" href="#fix-blood-del" title="Permalink to this headline">¶</a></h2>
+<p>Makes it so that future caravans won&#8217;t bring barrels full of blood, ichor, or goo.</p>
+</div>
+<div class="section" id="fix-build-location">
+<span id="scripts-fix-build-location"></span><h2>fix/build-location<a class="headerlink" href="#fix-build-location" title="Permalink to this headline">¶</a></h2>
+<p>Fixes construction jobs that are stuck trying to build a wall while standing
+on the same exact tile (bug 5991), designates the tile restricted traffic to
+hopefully avoid jamming it again, and unsuspends them.</p>
+</div>
+<div class="section" id="fix-dead-units">
+<span id="scripts-fix-dead-units"></span><h2>fix/dead-units<a class="headerlink" href="#fix-dead-units" title="Permalink to this headline">¶</a></h2>
+<p>Removes uninteresting dead units from the unit list. Doesn&#8217;t seem to give any
+noticeable performance gain, but migrants normally stop if the unit list grows
+to around 3000 units, and this script reduces it back.</p>
+</div>
+<div class="section" id="fix-fat-dwarves">
+<span id="scripts-fix-fat-dwarves"></span><h2>fix/fat-dwarves<a class="headerlink" href="#fix-fat-dwarves" title="Permalink to this headline">¶</a></h2>
+<p>Avoids 5-10% FPS loss due to constant recalculation of insulation for dwarves at
+maximum fatness, by reducing the cap from 1,000,000 to 999,999.</p>
+</div>
+<div class="section" id="fix-feeding-timers">
+<span id="scripts-fix-feeding-timers"></span><h2>fix/feeding-timers<a class="headerlink" href="#fix-feeding-timers" title="Permalink to this headline">¶</a></h2>
+<p>Reset the GiveWater and GiveFood timers of all units as appropriate.</p>
+</div>
+<div class="section" id="fix-item-occupancy">
+<span id="scripts-fix-item-occupancy"></span><h2>fix/item-occupancy<a class="headerlink" href="#fix-item-occupancy" title="Permalink to this headline">¶</a></h2>
+<p>Diagnoses and fixes issues with nonexistant &#8216;items occupying site&#8217;, usually
+caused by autodump bugs or other hacking mishaps.</p>
+</div>
+<div class="section" id="fix-loyaltycascade">
+<span id="scripts-fix-loyaltycascade"></span><h2>fix/loyaltycascade<a class="headerlink" href="#fix-loyaltycascade" title="Permalink to this headline">¶</a></h2>
+<p>Aborts loyalty cascades by fixing units whose own civ is the enemy.</p>
+</div>
+<div class="section" id="fix-population-cap">
+<span id="scripts-fix-population-cap"></span><h2>fix/population-cap<a class="headerlink" href="#fix-population-cap" title="Permalink to this headline">¶</a></h2>
+<p>Run this after every migrant wave to ensure your population cap is not exceeded.
+The issue with the cap is that it is compared to the population number reported
+by the last caravan, so once it drops below the cap, migrants continue to come
+until that number is updated again.</p>
+</div>
+<div class="section" id="fix-stable-temp">
+<span id="scripts-fix-stable-temp"></span><h2>fix/stable-temp<a class="headerlink" href="#fix-stable-temp" title="Permalink to this headline">¶</a></h2>
+<p>Instantly sets the temperature of all free-lying items to be in equilibrium with
+the environment and stops temperature updates. In order to maintain this efficient
+state however, use <a class="reference internal" href="../../docs/Plugins.html#plugins-tweak"><span>tweak</span></a> <code class="docutils literal"><span class="pre">stable-temp</span></code> and <a class="reference internal" href="../../docs/Plugins.html#plugins-tweak"><span>tweak</span></a> <code class="docutils literal"><span class="pre">fast-heat</span></code>.</p>
+</div>
+<div class="section" id="fix-stuckdoors">
+<span id="scripts-fix-stuckdoors"></span><h2>fix/stuckdoors<a class="headerlink" href="#fix-stuckdoors" title="Permalink to this headline">¶</a></h2>
+<p>Fix doors that are stuck open due to incorrect map occupancy flags, eg due to
+incorrect use of teleport.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../README.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">fix/* - scripts that fix bugs or common problems</a><ul>
+<li><a class="reference internal" href="#fix-blood-del">fix/blood-del</a></li>
+<li><a class="reference internal" href="#fix-build-location">fix/build-location</a></li>
+<li><a class="reference internal" href="#fix-dead-units">fix/dead-units</a></li>
+<li><a class="reference internal" href="#fix-fat-dwarves">fix/fat-dwarves</a></li>
+<li><a class="reference internal" href="#fix-feeding-timers">fix/feeding-timers</a></li>
+<li><a class="reference internal" href="#fix-item-occupancy">fix/item-occupancy</a></li>
+<li><a class="reference internal" href="#fix-loyaltycascade">fix/loyaltycascade</a></li>
+<li><a class="reference internal" href="#fix-population-cap">fix/population-cap</a></li>
+<li><a class="reference internal" href="#fix-stable-temp">fix/stable-temp</a></li>
+<li><a class="reference internal" href="#fix-stuckdoors">fix/stuckdoors</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../README.html">Documentation overview</a><ul>
+  <li><a href="../README.html">DFHack Scripts</a><ul>
+      <li>Previous: <a href="../devel/README.html" title="previous chapter">devel/*</a></li>
+      <li>Next: <a href="include-all.html" title="next chapter">fix/blood-del</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/scripts/fix/README.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, The DFHack Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../../_sources/scripts/fix/README.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

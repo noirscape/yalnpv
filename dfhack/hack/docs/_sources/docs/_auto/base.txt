@@ -1,0 +1,568 @@
+.. _base:
+
+#############
+Basic Scripts
+#############
+
+.. include:: /scripts/about.txt
+
+.. contents::
+
+.. _adaptation:
+
+.. include:: /scripts/adaptation.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _add-thought:
+
+.. include:: /scripts/add-thought.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _adv-max-skills:
+
+.. include:: /scripts/3rdparty/lethosor/adv-max-skills.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _armoks-blessing:
+
+.. include:: /scripts/armoks-blessing.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _autofarm:
+
+.. include:: /scripts/autofarm.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _autolabor-artisans:
+
+.. include:: /scripts/autolabor-artisans.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _autounsuspend:
+
+.. include:: /scripts/autounsuspend.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _ban-cooking:
+
+.. include:: /scripts/ban-cooking.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _binpatch:
+
+.. include:: /scripts/binpatch.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _brainwash:
+
+.. include:: /scripts/brainwash.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _burial:
+
+.. include:: /scripts/burial.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _combine-drinks:
+
+.. include:: /scripts/3rdparty/kane-t/combine_drinks.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _combine-plants:
+
+.. include:: /scripts/3rdparty/kane-t/combine_plants.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _create-items:
+
+.. include:: /scripts/create-items.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _deathcause:
+
+.. include:: /scripts/deathcause.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _deteriorateclothes:
+
+.. include:: /scripts/deteriorateclothes.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _deterioratecorpses:
+
+.. include:: /scripts/deterioratecorpses.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _deterioratefood:
+
+.. include:: /scripts/deterioratefood.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _dfusion:
+
+.. include:: /scripts/dfusion.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _digfort:
+
+.. include:: /scripts/digfort.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _drain-aquifer:
+
+.. include:: /scripts/drain-aquifer.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _elevate-mental:
+
+.. include:: /scripts/elevate-mental.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _elevate-physical:
+
+.. include:: /scripts/elevate-physical.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _embark-skills:
+
+.. include:: /scripts/3rdparty/lethosor/embark-skills.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _emigration:
+
+.. include:: /scripts/emigration.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _exportlegends:
+
+.. include:: /scripts/exportlegends.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _exterminate:
+
+.. include:: /scripts/exterminate.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _feature:
+
+.. include:: /scripts/feature.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _fix-ster:
+
+.. include:: /scripts/fix-ster.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _fixnaked:
+
+.. include:: /scripts/fixnaked.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _forum-dwarves:
+
+.. include:: /scripts/forum-dwarves.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _full-heal:
+
+.. include:: /scripts/full-heal.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _gaydar:
+
+.. include:: /scripts/gaydar.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _growcrops:
+
+.. include:: /scripts/growcrops.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _hfs-pit:
+
+.. include:: /scripts/hfs-pit.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _hotkey-notes:
+
+.. include:: /scripts/hotkey-notes.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _item-descriptions:
+
+.. include:: /scripts/item-descriptions.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _launch:
+
+.. include:: /scripts/3rdparty/maxthyme/launch.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _lever:
+
+.. include:: /scripts/lever.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _locate-ore:
+
+.. include:: /scripts/locate-ore.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _log-region:
+
+.. include:: /scripts/log-region.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _lua:
+
+.. include:: /scripts/lua.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _make-legendary:
+
+.. include:: /scripts/make-legendary.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _make-monarch:
+
+.. include:: /scripts/make-monarch.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _markdown:
+
+.. include:: /scripts/markdown.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _masspit:
+
+.. include:: /scripts/masspit.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _migrants-now:
+
+.. include:: /scripts/migrants-now.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _multicmd:
+
+.. include:: /scripts/multicmd.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _names:
+
+.. include:: /scripts/3rdparty/maxthyme/names.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _open-legends:
+
+.. include:: /scripts/3rdparty/lethosor/open-legends.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _points:
+
+.. include:: /scripts/points.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _position:
+
+.. include:: /scripts/position.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _pref-adjust:
+
+.. include:: /scripts/pref-adjust.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _prefchange:
+
+.. include:: /scripts/3rdparty/maxthyme/prefchange.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _putontable:
+
+.. include:: /scripts/putontable.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _quicksave:
+
+.. include:: /scripts/quicksave.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _region-pops:
+
+.. include:: /scripts/region-pops.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _rejuvenate:
+
+.. include:: /scripts/rejuvenate.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _remove-stress:
+
+.. include:: /scripts/remove-stress.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _remove-wear:
+
+.. include:: /scripts/remove-wear.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _repeat:
+
+.. include:: /scripts/repeat.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _setfps:
+
+.. include:: /scripts/setfps.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _show-unit-syndromes:
+
+.. include:: /scripts/show-unit-syndromes.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _siren:
+
+.. include:: /scripts/siren.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _soundsense-season:
+
+.. include:: /scripts/soundsense-season.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _source:
+
+.. include:: /scripts/source.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _spawnunit:
+
+.. include:: /scripts/spawnunit.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _startdwarf:
+
+.. include:: /scripts/startdwarf.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _starvingdead:
+
+.. include:: /scripts/starvingdead.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _stripcaged:
+
+.. include:: /scripts/stripcaged.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _superdwarf:
+
+.. include:: /scripts/superdwarf.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _teleport:
+
+.. include:: /scripts/teleport.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _tidlers:
+
+.. include:: /scripts/tidlers.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _troubleshoot-item:
+
+.. include:: /scripts/3rdparty/lethosor/troubleshoot-item.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _twaterlvl:
+
+.. include:: /scripts/twaterlvl.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _undump-buildings:
+
+.. include:: /scripts/undump-buildings.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _unsuspend:
+
+.. include:: /scripts/unsuspend.rb
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _view-item-info:
+
+.. include:: /scripts/view-item-info.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _warn-starving:
+
+.. include:: /scripts/warn-starving.lua
+   :start-after: =begin
+   :end-before: =end
+
+
+.. _weather:
+
+.. include:: /scripts/weather.lua
+   :start-after: =begin
+   :end-before: =end
